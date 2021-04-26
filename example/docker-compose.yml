@@ -9,7 +9,7 @@ services:
     volumes: 
       - ./sql/:/docker-entrypoint-initdb.d
 
-  wallet:
+  web-api:
     image: "brucedominguez/web-api-healthcheck:latest"
     restart: on-failure
     env_file:
